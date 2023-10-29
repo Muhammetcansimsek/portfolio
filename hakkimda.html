@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Benim Hakkımda</h1>
+                        <p class="paragraph">Ben 24 yaşında bilgisayar mühendisliği 4.sınıfından Muhammet Can Şimşek. Siber güvenlik alanıyla uğraşıyorum,
+                             web güvenliği tarafında bir çok araç kullanıyorum ve ağ güvenliği tarafında saldırı tespitleri çeşitli saldırılar
+                             ve bunlara nasıl önlem alınabileceği tarafında kendimi geliştirdim şuan halihazırdaki bu web sitesini örnek amaçlı yapıyorum
+                             ve tüm kodlara open source olarak sayfaya koyduğum github ikonu ile ulaşabilirsiniz.                    
+                        </p>
+                        <div id="icerik">
+                            <a href="https://github.com/Muhammetcansimsek" target="_blank">
+                                <i class="fab fa-github"></i> Github
+                            </a> 
+                        </div>
+                                               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 Muhammet Can Şimşek. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+    
+
+</body>
+</html>

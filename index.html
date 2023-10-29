@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/263400b066.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+    <!--CSS dosyasını html sayfasına bağlar-->
+    <link rel="stylesheet" href="style.css">
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li> 
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>            
+        </nav>
+        <div class="header-text">
+            <h1>Hoş Geldiniz</h1>
+            <h4>Ben <span>Muhammet Can Şimşek</span>, portföyüme hoş geldiniz</h4>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2023 Muhammet Can Şimşek. Tüm hakları saklıdır.</p>
+    </footer>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

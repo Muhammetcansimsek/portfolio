@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/263400b066.js" crossorigin="anonymous"></script>
+</head>
+    <title>İletişim</title>
+
+    <!--CSS dosyasını html sayfasına bağlar-->
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <div id="header">
+        <div id="contact">
+            <div class="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimda.html">Hakkımda</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h2>Benimle iletişime geçin!</h2>          
+                        <a href="mailto:ornek@example.com">ornek@example.com</a>
+                    </div>
+    
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <p>&copy; 2023 Muhammet Can Şimşek. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+
+
+</body>
+</html>
